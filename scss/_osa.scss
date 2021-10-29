@@ -1,0 +1,309 @@
+
+@include media-breakpoint-up(xs) {}
+@include media-breakpoint-up(sm) { }
+@include media-breakpoint-up(md) { }
+@include media-breakpoint-up(lg) { }
+@include media-breakpoint-up(xl) {}
+
+#navbar-main{
+	font-size:1.25rem;
+	background-color: rgba(255, 255, 255,0.8) !important;
+	/* box-shadow: 0 0 0 2px rgba(0, 0, 0,0.1)!important; */
+	/* box-shadow: 0 0 0 3px rgba(10, 10, 10,0.05)!important; */
+	-webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.5);
+	-moz-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.5);
+	box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.5);
+}
+
+#jumbo-main{
+	
+
+	// X=(Y-(1-P)255)/P where
+
+// P=the opacity (=0...1) of your foreground color
+
+// Y=your wanted apparent foreground color component R,G or B, in scale 0...255
+
+// X=the foreground color component R, G or B which you should use to get the wanted apparent color
+
+	/* 61, 71, 102 */
+
+	// x = (61 - (1-.9)*255)/0.9
+	// x = (71 - (1-.9)*255)/0.9
+	// x = (102 - (1-.9)*255)/0.9
+
+	background: rgba(40, 51, 85, 0.9) !important;
+}
+
+
+input[type="text"]:focus {
+	outline: 1px solid transparent; 
+	box-shadow: 0 0 0 4px $orange300;
+  }
+
+select:focus {
+	outline: 1px solid transparent; 
+	box-shadow: 0 0 0 4px $orange300 !important;
+}
+
+button:focus {	
+	outline: 1px solid transparent; 
+	box-shadow: 0 0 0 4px $orange300!important;
+}
+
+
+a:focus {	
+	outline: 1px solid transparent; 
+	box-shadow: 0 0 0 4px $orange300!important;
+}
+
+button:focus-visible {
+	/* Default. Will be removed in Forced Color Modes */
+	box-shadow: 5px 5px 7px $orange300;
+	/* Fallback. Will be visible with custom system colors in Forced Color Modes */
+	outline: 3px solid transparent; 
+}
+
+
+
+body{
+	background-image: url('/static/img/auditor_logo_bg_image.png'); 
+	background-repeat: no-repeat; 
+	background-size:300px 300px;
+	background-position: top center;
+}
+
+@include media-breakpoint-up(sm) {
+	
+	#header-container{
+		display: flex;
+		/* background-color: rgb(206,33,39); */
+		text-align: center;
+		justify-content: center;
+		align-items: center;
+	}
+
+	h1{
+		font-size:2.5rem;
+	}
+
+	body{
+		background-image: url('/static/img/auditor_logo_bg_image.png'); 
+		background-repeat: no-repeat; 
+		background-size:400px 400px;
+		background-position: top center;
+		/* background-attachment: fixed; */
+		/* background-position-x: 3%;
+		background-position-y: 28px; */
+		/* background-color:#FBFDFF ; */
+	}
+	
+	#navbar-main{
+		font-size:1.25rem;
+		padding-left:1rem;
+		padding-right:1rem;
+		background-color: rgba(255, 255, 255,0.8) !important;
+		/* box-shadow: 0 0 0 2px rgba(0, 0, 0,0.1)!important; */
+		/* box-shadow: 0 0 0 3px rgba(10, 10, 10,0.05)!important; */
+		-webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.5);
+		-moz-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.5);
+		box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.5);
+	}
+
+}
+
+
+@include media-breakpoint-up(md) {
+	
+	#header-container{
+		display: flex;
+		/* background-color: rgb(206,33,39); */
+		text-align: center;
+		justify-content: center;
+		align-items: center;
+	}
+
+	h1{
+		font-size:3rem;
+	}
+
+	body{
+		background-image: url('/static/img/auditor_logo_bg_image.png'); 
+		background-repeat: no-repeat; 
+		background-size:500px 500px;
+		background-position: top left;
+		/* background-attachment: fixed; */
+		background-position-x: 3%;
+		background-position-y: 28px;
+		background-color:#FBFDFF ;
+	}
+
+	#navbar-main{
+		font-size:1.25rem;
+		padding-left:2rem;
+		padding-right:2rem;
+		background-color: rgba(255, 255, 255,0.8) !important;
+		/* box-shadow: 0 0 0 2px rgba(0, 0, 0,0.1)!important; */
+		/* box-shadow: 0 0 0 3px rgba(10, 10, 10,0.05)!important; */
+		-webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.5);
+		-moz-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.5);
+		box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.5);
+	}
+
+}
+
+@include media-breakpoint-up(lg) {
+	
+	#header-container{
+		display: flex;
+		/* background-color: rgb(206,33,39); */
+		text-align: center;
+		justify-content: center;
+		align-items: center;
+	}
+
+	h1{
+		font-size:3.5rem;
+	}
+
+	#navbar-main{
+		font-size:1.25rem;
+		padding-left:3rem;
+		padding-right:3rem;
+		background-color: rgba(255, 255, 255,0.8) !important;
+		/* box-shadow: 0 0 0 2px rgba(0, 0, 0,0.1)!important; */
+		/* box-shadow: 0 0 0 3px rgba(10, 10, 10,0.05)!important; */
+		-webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.5);
+		-moz-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.5);
+		box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.5);
+	}
+
+}
+
+@include media-breakpoint-up(lg) {
+	
+	#header-container{
+		display: flex;
+		/* background-color: rgb(206,33,39); */
+		text-align: center;
+		justify-content: center;
+		align-items: center;
+	} 
+
+	h1{
+		font-size:3.5rem;
+	}
+
+	#navbar-main{
+		font-size:1.25rem;
+		padding-left:4rem;
+		padding-right:4rem;
+		background-color: rgba(255, 255, 255,0.8) !important;
+		/* box-shadow: 0 0 0 2px rgba(0, 0, 0,0.1)!important; */
+		/* box-shadow: 0 0 0 3px rgba(10, 10, 10,0.05)!important; */
+		-webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.5);
+		-moz-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.5);
+		box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.5);
+	}
+
+}
+
+
+//  Data Table Pagination
+.pagination > li > a
+{
+	background-color: $blue400;
+	color: $blue50;
+}
+
+.pagination > li > a:focus,
+.pagination > li > a:hover,
+.pagination > li > span:focus,
+.pagination > li > span:hover
+{
+	color: $blue50;
+	background-color: $blue700;
+	border-color: $blue700;
+}
+
+.pagination > .active > a
+{
+	color: $blue50;
+	background-color: $blue700 !important;
+	border: solid 1px $blue700 !important;
+}
+
+.pagination > .active > a:hover
+{
+	background-color: $blue700 !important;
+	border: solid 1px $blue700;
+}
+
+.page-item.disabled .page-link {
+	color: $blue50;
+	background-color: $blue400 !important;
+}
+
+// Spinner
+#spinner {
+	width:100%;
+	
+	/*-Lets Center the Spinner-*/
+	position:fixed;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	
+	/*Centering my shade */
+	/* margin-bottom: 40px;
+	margin-top: 60px; */
+	
+	background-color: rgba(255,255,255,0.7);
+	z-index:9999;
+	display: none; 
+}
+
+
+@-webkit-keyframes spin {
+	from {-webkit-transform:rotate(0deg);}
+	to {-webkit-transform:rotate(360deg);}
+}
+
+@keyframes spin {
+	from {transform:rotate(0deg);}
+	to {transform:rotate(360deg);}
+}
+
+
+#spinner::after {
+	content:'';
+	display:block;
+	position:absolute;
+	left:48%;top:40%;
+	width:100px;height:100px;
+	border-style:solid;
+	border: 5px solid #fff;
+	border-top-color: #2c3e50;
+	border-width: 15px;
+	border-radius:75%;
+	-webkit-animation: spin 1s linear infinite;
+	
+	/* Lets make it go round */
+	animation: spin 1s linear infinite;
+}
+
+
+footer a{
+	text-decoration: underline;
+	color: $white;
+}
+
+footer a:hover{
+	text-decoration: underline;
+	color: $white;
+}
+
+// #container-filter{
+
+// }
