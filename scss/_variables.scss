@@ -20,6 +20,9 @@ $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
 $black:    #000 !default;
 
+$gray-200t: rgba(233, 236, 239, .8);
+
+
 $grays: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
 $grays: map-merge(
@@ -47,14 +50,15 @@ $blue600:    #313841 !default;
 $blue700:    #3D4766 !default;
 $blue800:    #2F364C !default;
 
-$grey100: #cccccc;
-$grey200: #b3b3b3;
-$grey300: #a9a9a9;
-$grey400: #999999;
-$grey500: #4d4d4d;
-$grey600: #333333;
+$grey100: #f2f2f2;
+$grey200: #cccccc;
+$grey300: #b3b3b3;
+$grey400: #a9a9a9;
+$grey500: #999999;
+$grey600: #4d4d4d;
+$grey700: #333333;
 
-
+$orange50 : #FEF5EB; 
 $orange100: #FCD6B0;
 $orange200: #F9A859;
 $orange300: #E17F41;
@@ -73,7 +77,7 @@ $peach:   #F9A859 !default;
 $green:   #7DA267 !default;
 $forest:  #4E653E !default;
 $teal:    #66748F !default;
-$cyan:    #3D4766 !default;
+$cyan:    #66748F !default;
 
 $colors: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
@@ -128,6 +132,7 @@ $theme-colors: map-merge(
     "blue600":    $blue600,
     "blue700":    $blue700,
     "blue800":    $blue800,
+    "orange50":   $orange50,
     "orange100":  $orange100,
     "orange200":  $orange200,
     "orange300":  $orange300,
@@ -303,10 +308,10 @@ $transition-collapse:         height .35s ease !default;
 // Font, line-height, and color for body text, headings, and more.
 
 // stylelint-disable value-keyword-case
-$font-family-sans-serif:      "Lato",  sans-serif, !default;
+$font-family-sans-serif:      "Open Sans",  sans-serif, !default;
 $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 $font-family-base:            $font-family-sans-serif !default;
-$font-family-serif:           'Lora', serif !default;
+$font-family-serif:           'Newsreader', serif !default;
 
 // stylelint-enable value-keyword-case
 
@@ -321,16 +326,22 @@ $font-weight-bold:            700 !default;
 $font-weight-base:            $font-weight-normal !default;
 $line-height-base:            1.5 !default;
 
-$h1-font-size:                $font-size-base * 2.5 !default;
-$h2-font-size:                $font-size-base * 2 !default;
-$h3-font-size:                $font-size-base * 1.75 !default;
-$h4-font-size:                $font-size-base * 1.5 !default;
-$h5-font-size:                $font-size-base * 1.25 !default;
-$h6-font-size:                $font-size-base !default;
+$h1-font-size:                $font-size-base * 3.0 !default;
+$h2-font-size:                $font-size-base * 2.5 !default;
+$h3-font-size:                $font-size-base * 2.0 !default;
+$h4-font-size:                $font-size-base * 1.75 !default;
+$h5-font-size:                $font-size-base * 1.5 !default;
+$h6-font-size:                $font-size-base * 1.25!default;
 
 $headings-margin-bottom:      ($spacer / 2) !default;
+$h1-margin-bottom:            0rem;
+$h2-margin-bottom:            0rem;
+$h3-margin-bottom:            0rem;
+$h4-margin-bottom:            0.25rem;
+$h5-margin-bottom:            0.25rem;
+$h6-margin-bottom:            0rem;
 $headings-font-family:        $font-family-serif; //inherit !default;
-$headings-font-weight:        700 !default;
+$headings-font-weight:        400 !default;
 $headings-line-height:        1.2 !default;
 $headings-color:              inherit !default;
 
@@ -951,10 +962,10 @@ $breadcrumb-item-padding:           .5rem !default;
 
 $breadcrumb-margin-bottom:          1rem !default;
 
-$breadcrumb-bg:                     $gray-200 !default;
+$breadcrumb-bg:                     $gray-200t !default;
 $breadcrumb-divider-color:          $gray-600 !default;
 $breadcrumb-active-color:           $gray-600 !default;
-$breadcrumb-divider:                quote("/") !default;
+$breadcrumb-divider:                quote(">") !default;
 
 $breadcrumb-border-radius:          $border-radius !default;
 
