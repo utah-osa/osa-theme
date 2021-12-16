@@ -10,7 +10,7 @@
 <br>
 
 ## I don't want the SASS, but just need css, js or .map for my project:
-great use this:
+great just get the one(s) you need:
 ```
 bootstrap/
 └── dist/
