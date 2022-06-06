@@ -65,6 +65,22 @@ $orange300: #E17F41;
 $orange400: #C85628;
 $orange500: #883A1B;
 
+$red50 : #EBD1D1; 
+$red100: #D7A3A3;
+$red200: #C37575;
+$red300: #B95E5E;
+$red400: #B45252;
+$red500: #AF4646;
+
+$green50: #BED1B3;
+$green100: #9EBA8D;
+$green200: #8EAE7A;
+$green300: #86A871;
+$green400: #7DA267;
+$green500: #7DA267;
+$green600: #668453;
+$green700: #4E653E;
+
 $blue:    #2F364C !default;
 $indigo:  #3D4766 !default;
 $purple:  #A0547A !default;
@@ -148,7 +164,21 @@ $theme-colors: map-merge(
     "grey300":    $grey300,
     "grey400":    $grey400,
     "grey500":    $grey500,
-    "grey600":    $grey600
+    "grey600":    $grey600,
+    "red50":      $red50,
+    "red100":     $red100,
+    "red200":     $red200,
+    "red300":     $red300,
+    "red400":     $red400,
+    "red500":     $red500,
+
+    "green50":     $green50,
+    "green100":     $green100,
+    "green200":     $green200,
+    "green300":     $green300,
+    "green400":     $green400,
+    "green500":     $green500,
+    "green600":     $green600,
 
 
   ),
@@ -315,7 +345,7 @@ $font-family-serif:           'Newsreader', serif !default;
 
 // stylelint-enable value-keyword-case
 
-$font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
+$font-size-base:              .80rem !default; // Assumes the browser default, typically `16px`
 $font-size-lg:                ($font-size-base * 1.25) !default;
 $font-size-sm:                ($font-size-base * .875) !default;
 
@@ -340,7 +370,7 @@ $h3-margin-bottom:            0rem;
 $h4-margin-bottom:            0.25rem;
 $h5-margin-bottom:            0.25rem;
 $h6-margin-bottom:            0rem;
-$headings-font-family:        $font-family-serif; //inherit !default;
+$headings-font-family:        inherit !default;//$font-family-serif; //inherit !default;
 $headings-font-weight:        400 !default;
 $headings-line-height:        1.2 !default;
 $headings-color:              inherit !default;
